@@ -1,8 +1,9 @@
 # gitCS
 a git cheet sheet arranged by command and short discription
 
-### git config
-  config: —local —global —system
+git config
+--------------
+config: —local —global —system
 
 `$ git config --global user.name  [name]`
 `$ git config --global user.email [email]`

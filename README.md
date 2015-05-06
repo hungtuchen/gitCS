@@ -1,6 +1,12 @@
 # gitCS
 a git cheet sheet arranged by command and short discription
 
+Usage
+--------------
+Sometimes You know some keyword for key command but can't memorize it.
+This cheat sheet is I creat for this need, just use command(ctrl) + F to quickly find what you need.
+// for short discription
+
 git config
 --------------
 config: --local --global --system

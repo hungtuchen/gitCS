@@ -130,6 +130,18 @@ git merge
 
 `$ git merge —no-ff <branch>`
 
+git commit
+--------------
+
+`$ git commit -am <message>`
+
+// add changes from all tracked files, doesn’t add new (untracked) files
+
+// add and commit in 1 step
+
+`$ git commit --amend -m <new_message>`
+
+// whatever has been staged is added to last commit
 
 # Credit
 Most of the content are based on what I learned from [CodeSchool](https://www.codeschool.com/paths/git)

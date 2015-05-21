@@ -5,6 +5,7 @@ Usage
 --------------
 Sometimes You know some keyword for key command but can't memorize it.
 This cheat sheet is I creat for this need, just use command(ctrl) + F to quickly find what you need.
+
 // for short discription
 
 git config
@@ -128,3 +129,7 @@ git merge
 // both branches have changed
 
 `$ git merge —no-ff <branch>`
+
+
+# Credit
+Most of the content are based on what I learned from [CodeSchool](https://www.codeschool.com/paths/git)

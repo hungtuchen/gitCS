@@ -111,3 +111,20 @@ git branch
 // create new branch point to <hash>
 
 // <hash> can be replaced with reflog shortname
+
+git merge
+--------------
+
+`$ git merge <branch_name>`
+
+// fast-foward condition:
+
+// (assume on master) nothing new
+
+// <branch_name> something new
+
+// recursive condition:
+
+// both branches have changed
+
+`$ git merge —no-ff <branch>`

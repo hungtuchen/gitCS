@@ -143,5 +143,44 @@ git commit
 
 // whatever has been staged is added to last commit
 
+git fetch, rebase
+--------------
+
+// when local and remote both commit
+
+`$ git fetch; git rebase`
+
+// (if not to merge automatically)
+
+// instead of recursive merge (local)
+
+`$ git checkout <feature>`
+`$ git rebase master`
+
+// (assumed we want <feature> merged into master), this command will add the commits of master into feature
+
+`$ git checkout master`
+`$ git merge <feature>`
+
+// then it would be fast-forward
+
+// when rebase comes into conflict
+
+`$ git rebase --continue`
+
+// problem has resolved
+
+`$ git rebase --skip`
+
+//skip this patch
+
+`$ git rebase --abort`
+
+//check out the original branch and stop rebasing
+
+`$ git rebase -i  HEAD~3`
+
+// interactive rebase after HEAD~3
+
 # Credit
 Most of the content are based on what I learned from [CodeSchool](https://www.codeschool.com/paths/git)

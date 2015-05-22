@@ -182,5 +182,30 @@ git fetch, rebase
 
 // interactive rebase after HEAD~3
 
+git diff
+--------------
+
+`$ git diff`
+
+// show unstaged differences since last commit
+
+`$ git diff --staged`
+
+// view staged differences
+
+`$ git diff HEAD~5`
+
+// five commits ago
+
+`$ git diff HEAD^..HEAD`
+
+// second most recent commit vs. most recent
+
+`$ git diff <hash1>..<hash2>`
+
+// also <branch1>..<branch2>
+
+// time range as in [git log](git log)
+
 # Credit
 Most of the content are based on what I learned from [CodeSchool](https://www.codeschool.com/paths/git)

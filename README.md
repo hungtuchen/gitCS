@@ -55,6 +55,37 @@ $ git config --global alias.hist \
 
 // records all fixes to merge conflict, automatically fix later ones if the same
 
+git log
+--------------
+
+`$ git log`
+
+`$ git log --pretty=oneline`
+
+// <SHA hash> <commit_message>
+
+`$ git log --pretty=format:”%h %ad- %s [%an]”`
+
+// %ad = author date % an = author name
+
+// %h = SHA hash %s = subject %d = ref names
+
+`$ git log --oneline -p`
+
+// -p for patch output (detail change)
+
+// --stat insertion and deletion
+
+// --graph visualize the merging
+
+`$ git log --until=1.minute.ago`
+
+// --since=1.day(hour) ago
+
+// --since=1.month.ago --until=2.weeks.ago
+
+// --since=2015-01-01 --until= 2015-04-01
+
 git remote
 --------------
 
@@ -205,7 +236,7 @@ git diff
 
 // also <branch1>..<branch2>
 
-// time range as in [git log](git log)
+// time range as in [git log](git-log)
 
 # Credit
 Most of the content are based on what I learned from [CodeSchool](https://www.codeschool.com/paths/git)

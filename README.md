@@ -62,7 +62,7 @@ git log
 
 `$ git log --pretty=oneline`
 
-// <SHA hash> <commit_message>
+// (SHA hash) (commit_message)
 
 `$ git log --pretty=format:”%h %ad- %s [%an]”`
 
@@ -234,9 +234,9 @@ git diff
 
 `$ git diff <hash1>..<hash2>`
 
-// also <branch1>..<branch2>
+// also (branch1)..(branch2)
 
-// time range as in [git log](git-log)
+// time range as in [git log](README.md#git-log)
 
 # Credit
 Most of the content are based on what I learned from [CodeSchool](https://www.codeschool.com/paths/git)

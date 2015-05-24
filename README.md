@@ -238,5 +238,29 @@ git diff
 
 // time range as in [git log](README.md#git-log)
 
+git apply
+--------------
+
+`$ git apply <patch_file>`
+
+// read the supplied patch file and applies it to files (generated from [git format-patch](README.md#git-format-patch))
+
+// this command applies the patch but does not create a commit
+
+git format-patch
+--------------
+
+`$ git format-patch origin`
+
+// Extract all commits which are in the current branch but not in the origin branch
+
+`$ git format-patch --root origin`
+
+// Extract all commits that lead to origin since the inception of the project
+
+`$ git format-patch -3`
+
+// Extract three topmost commits from the current branch
+
 # Credit
 Most of the content are based on what I learned from [CodeSchool](https://www.codeschool.com/paths/git)

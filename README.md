@@ -238,6 +238,41 @@ git diff
 
 // time range as in [git log](README.md#git-log)
 
+git push
+--------------
+
+`$ git push <remote> <branch>`
+
+`$ git push -u <remote> <branch>`
+
+// link local `<branch>` to remote `<branch>` (tracking)
+
+`$ git push <remote> <local_branch>:<remote_branch>`
+
+// link up <local_branch> to <remote_branch> (useful for ex: heroku)
+
+`$ git push <remote> :<branch>`
+
+// delete remote branch
+
+`$ git push --tags`
+
+// push changes and new tags
+
+`$ git push origin :refs/tags/<tag_name>`
+
+// to delete a remote tag
+
+`$ git push --recurse-submodules=check`
+
+// abort push if haven’t pushed submodule
+
+// can run when pushing from parent
+
+`$ git push —recurse-submodules=on-demand`
+
+// push all submodules automatically
+
 git apply
 --------------
 

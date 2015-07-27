@@ -144,6 +144,38 @@ git branch
 
 // <hash> can be replaced with reflog shortname
 
+git checkout
+--------------
+
+`$ git checkout -- <file>… `
+
+// to discard changes in working directory
+// blow away all changes since last commit
+
+`$ git checkout -b <branch_name>`
+// as if `$ git branch <branch_name>` were called and then checked out
+
+`$ git checkout <tag>`
+
+git tag
+--------------
+
+`$ git tag`
+
+// list all tags
+
+`$ git tag -a <tag_name> -m <message>`
+
+// to add a new tag and make it annotated
+
+`$ git tag -d <tag_name>`
+
+// delete tag
+
+`$ git push origin :refs/tags/<tag_name>`
+
+// to delete a remote tag
+
 git merge
 --------------
 

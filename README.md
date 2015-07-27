@@ -297,5 +297,52 @@ git format-patch
 
 // Extract three topmost commits from the current branch
 
+git stash
+--------------
+
+`$ git stash (save) <message>`
+
+// save modified files and restore last commit
+
+`$ git stash save --keep-index`
+
+// keep staging area not to be stashed
+
+// other options: --include-untracked
+
+// normally git stash only tracked files
+
+`$ git stash apply stash@{[number]}`
+
+// bring stashed files back
+
+// by default: stash@{0}, use `$ git stash list` to check
+
+`$ git stash list (--stat)`
+
+// list all stashes, any argument as git log
+
+`$ git stash show stash@{[number]}`
+
+// show particular stash,  by default: stash@{0}, any argument as git log
+
+`$ git stash drop stash@{[number]}`
+
+// drop stash after applied, by default: stash@{0}
+
+`$ git stash pop`
+
+// $ git stash apply; git stash drop
+
+// need to drop manually if conflict exists
+
+`$ git stash branch <branch_name> stash@{[number]}`
+
+// checkout a new branch, apply the stash you specify and drop automatically
+
+`$ git stash clear`
+
+// clear all stashes
+
 # Credit
 Most of the content are based on what I learned from [CodeSchool](https://www.codeschool.com/paths/git)

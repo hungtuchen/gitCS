@@ -86,6 +86,13 @@ git log
 
 // --since=2015-01-01 --until= 2015-04-01
 
+git clone
+--------------
+
+`git clone <url> <new_repo_name>`
+
+`git clone <repo_to_be_cloned> <new_repo_name>`
+
 git remote
 --------------
 

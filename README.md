@@ -414,5 +414,31 @@ git stash
 
 // clear all stashes
 
+git submodule
+--------------
+
+`$ git submodule add <repo_address>`
+
+// create .gitmodules and <new_module_name> (actually a directory)
+
+**TO MODIFY SUBMODULES**
+
+`$ cd <new_module_name>`
+`$ git checkout master`
+
+// by default, don’t have branch
+
+// after modifying, add, commit, push as usual but also ‘need to back to parent module and do it again’
+
+`$ git submodule init`
+
+// to init a repo containing submodules first, adding entry to .git/config
+
+`$ git submodule update`
+
+// pull down the repo and new changes
+
+// notice: after update, it would be on no branch
+
 # Credit
 Most of the content are based on what I learned from [CodeSchool](https://www.codeschool.com/paths/git)

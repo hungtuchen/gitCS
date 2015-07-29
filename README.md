@@ -471,6 +471,11 @@ git rm
 
 // stop tracking
 
+git blame
+--------------
+
+`$ git blame <file> --date short`
+
 git submodule
 --------------
 

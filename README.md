@@ -283,6 +283,19 @@ git fetch, rebase
 
 // interactive rebase after HEAD~3
 
+git cherry-pick
+--------------
+
+`$ git checkout <branch_to_put_cherry-pick>`
+
+`$ git cherry-pick <SHAhash>`
+
+*options:*
+  --edit // to add new commit message
+  --no-commit <SHAhash…> // pull (multiple) commit and stages them
+  -x : add source SHA to commit message
+  --sign : track who did the cherry-picking
+
 git diff
 --------------
 

@@ -427,12 +427,35 @@ git stash
 
 // clear all stashes
 
+git filter-branch
+--------------
+
+`$ git filter-branch --tree-filter <shell_command> -- --all`
+
+// check out each commit to run `<shell_command>` and recommit
+
+ex: --tree-filter `‘rm -f password.txt’`
+
+--all   // on all branches
+
+HEAD    // filter only current branch
+
+`$ git filter-branch --index-filter <shell_command>`
+
+// `<shell_command>` ‘must’ operate on staging area
+
+ex: --index-filter `‘git rm --cached --ignore-unmatch password.txt’`
+
+-f    // if we wanna run filter-branch again, which overwrite the backup
+
+--prune-empty     // drop commit not modifying any file
+
 git submodule
 --------------
 
 `$ git submodule add <repo_address>`
 
-// create .gitmodules and <new_module_name> (actually a directory)
+// create `.gitmodules` and `<new_module_name>` (actually a directory)
 
 **TO MODIFY SUBMODULES**
 
@@ -445,7 +468,7 @@ git submodule
 
 `$ git submodule init`
 
-// to init a repo containing submodules first, adding entry to .git/config
+// to init a repo containing submodules first, adding entry to `.git/config`
 
 `$ git submodule update`
 

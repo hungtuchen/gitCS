@@ -504,3 +504,6 @@ git submodule
 
 # Credit
 Most of the content are based on what I learned from [CodeSchool](https://www.codeschool.com/paths/git)
+
+
+![git logo image](https://github.com/transedward/gitCS/blob/master/Git-Logo-2Color.png)

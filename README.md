@@ -157,6 +157,29 @@ git checkout
 
 `$ git checkout <tag>`
 
+git reset
+--------------
+
+`$ git reset HEAD <file> `
+
+// to unstage
+
+`$ git reset --soft HEAD^`
+
+// undo last commit, put changes into staging
+
+`$ git reset --hard HEAD^`
+
+// undo last commit and all changes
+
+`$ git reset --hard HEAD^^`
+
+// undo last 2 commits and all changes
+
+`$ git reset —hard <SHAhash>`
+
+`$ git reset —hard HEAD@{[number]}`
+
 git tag
 --------------
 

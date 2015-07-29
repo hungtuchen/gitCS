@@ -176,9 +176,24 @@ git reset
 
 // undo last 2 commits and all changes
 
-`$ git reset —hard <SHAhash>`
+`$ git reset --hard <SHAhash>`
 
-`$ git reset —hard HEAD@{[number]}`
+`$ git reset --hard HEAD@{[number]}`
+
+git reflog
+--------------
+
+// git update reflog whenever HEAD moves
+
+// only exists locally
+
+`$ git reflog`
+
+// list all the reflogs
+
+`$ git log --walk-reflogs`
+
+// to see reflog info in log format
 
 git tag
 --------------

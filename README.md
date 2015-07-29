@@ -457,6 +457,20 @@ ex: --index-filter `‘git rm --cached --ignore-unmatch password.txt’`
 
 --prune-empty     // drop commit not modifying any file
 
+.gitignore
+--------------
+
+ex: logs/*.log
+
+git rm
+--------------
+
+`$ git rm <file>; git commit -m <message>`
+
+`$ git rm —cached`
+
+// stop tracking
+
 git submodule
 --------------
 

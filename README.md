@@ -145,6 +145,10 @@ git branch
 
 // rename branch
 
+`$ git branch -m <newname>`
+
+// rename current branch
+
 `$ git branch <new_branch_name> <hash>`
 
 // create new branch point to <hash>

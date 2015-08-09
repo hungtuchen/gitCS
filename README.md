@@ -116,7 +116,9 @@ git remote
 
 `$ git remote prune <remote_name>`
 
-// to clean up deleted remote branches
+// Deletes all deleted branches on `<remote_name>` but still referenced under local(`remotes/<remote_name>`) 
+
+// options: --dry-run, report what branches will be pruned, but do not actually prune them.
 
 git branch
 --------------

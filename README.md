@@ -436,6 +436,14 @@ git stash
 
 // checkout a new branch, apply the stash you specify and drop automatically
 
+`$ git stash show -p stash@{0} | git apply -R`
+
+// sometimes you wanna un-apply stash, thought there is no command for that
+
+`$ git config --global alias.stash-unapply '!git stash show -p | git apply -R'`
+
+// to use `$ git stash-unapply`
+
 `$ git stash clear`
 
 // clear all stashes

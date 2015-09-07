@@ -8,6 +8,11 @@ This cheat sheet is I creat for this need, just use command(ctrl) + F to quickly
 
 // for short discription
 
+
+git clean
+--------------
+http://stackoverflow.com/questions/61212/how-do-i-remove-local-untracked-files-from-my-current-git-branch
+
 git config
 --------------
 config: --local --global --system

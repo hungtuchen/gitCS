@@ -9,10 +9,6 @@ This cheat sheet is I creat for this need, just use command(ctrl) + F to quickly
 // for short discription
 
 
-git clean
---------------
-http://stackoverflow.com/questions/61212/how-do-i-remove-local-untracked-files-from-my-current-git-branch
-
 git config
 --------------
 config: --local --global --system
@@ -486,9 +482,29 @@ git rm
 
 `$ git rm <file>; git commit -m <message>`
 
+// stop tracking
+// ex: you do `rm <file>` then do above, it would stage the file’s removal and commit
+// <file> will be gone and no longer tracked
+
 `$ git rm —cached`
 
-// stop tracking
+// keep the file on your hard drive but not have Git track it anymore
+
+git clean
+--------------
+
+`$ git clean -f`
+
+// delete untracked local files from your current branch
+
+option:
+`-fd`: also remove directories
+`-fX`: remove only ignored files
+`-fx`: remove ignored as well as non-ignored files
+
+`$ git clean -n`
+
+// no going back for `$ git clean -f`, so use this to preview first
 
 git blame
 --------------

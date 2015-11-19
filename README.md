@@ -158,6 +158,14 @@ git branch
 
 // <hash> can be replaced with reflog shortname
 
+*Recover from deleted branch*
+
+`$ git reflog`  // and find the SHA1 for the commit at the tip of your deleted branch, then
+
+`$ git checkout [sha]`
+
+`git checkout -b [branchname]` //  to recreate the branch from there.
+
 git checkout
 --------------
 
